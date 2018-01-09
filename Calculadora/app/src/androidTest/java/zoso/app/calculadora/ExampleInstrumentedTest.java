@@ -1,4 +1,4 @@
-package zoso.myapp;
+package zoso.app.calculadora;
 
 import android.content.Context;
 import android.support.test.InstrumentationRegistry;
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getTargetContext();
 
-        assertEquals("zoso.myapp", appContext.getPackageName());
+        assertEquals("zoso.app.calculadora", appContext.getPackageName());
     }
 }

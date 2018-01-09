@@ -1,4 +1,4 @@
-package zoso.myapp;
+package zoso.app.calculadora;
 
 import org.junit.Test;
 

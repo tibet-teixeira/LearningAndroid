@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="zoso.app.calculadora.CalculadoraActivity">
+
+    <EditText
+        android:id="@+id/num1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="15dp"
+        android:ems="10"
+        android:inputType="number|numberSigned|numberDecimal"
+        android:selectAllOnFocus="true"
+        android:singleLine="false"
+        android:text="Digite o primeiro numero" />
+
+    <EditText
+        android:id="@+id/num2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/num1"
+        android:ems="10"
+        android:inputType="number|numberSigned|numberDecimal"
+        android:selectAllOnFocus="true"
+        android:singleLine="false"
+        android:text="Digite o segundo numero" />
+
+    <Button
+        android:id="@+id/btSomar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/num2"
+        android:layout_marginStart="42dp"
+        android:layout_marginTop="62dp"
+        android:elevation="0dp"
+        android:text="Somar" />
+
+    <Button
+        android:id="@+id/btSubtrair"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btSomar"
+        android:layout_alignBottom="@+id/btSomar"
+        android:layout_alignParentEnd="true"
+        android:layout_marginEnd="48dp"
+        android:text="Subtrair" />
+
+    <Button
+        android:id="@+id/btDivisao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btMult"
+        android:layout_alignBottom="@+id/btMult"
+        android:layout_alignEnd="@+id/btSubtrair"
+        android:text="Dividir" />
+
+    <Button
+        android:id="@+id/btMult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignStart="@+id/btSomar"
+        android:layout_below="@+id/btSomar"
+        android:layout_marginTop="26dp"
+        android:text="Multiplicar" />
+</RelativeLayout>

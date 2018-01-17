@@ -45,9 +45,7 @@ public class SalarioActivity extends AppCompatActivity {
                     novo_salario = salario + (salario * 0.45);
                 else
                     novo_salario = salario + (salario * 0.50);
-
-                //NumberFormat numberFormat = new DecimalFormat("#,##");
-                //String str = numberFormat.format(novo_salario);
+                
                 String str = NumberFormat.getNumberInstance(Locale.US).format(novo_salario);
 
                 AlertDialog.Builder dialogo = new AlertDialog.Builder(SalarioActivity.this);

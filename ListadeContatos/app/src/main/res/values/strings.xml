@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">Lista de Contatos</string>
+    <string-array name="contatos">
+        <item>Aline</item>
+        <item>Lucas</item>
+        <item>Rafael</item>
+        <item>Helena</item>
+        <item>Gabriela</item>
+        <item>João</item>
+        <item>Maria</item>
+        <item>José</item>
+        <item>Eduarda</item>
+        <item>Larissa</item>
+        <item>André</item>
+        <item>Tibet</item>
+    </string-array>
+</resources>

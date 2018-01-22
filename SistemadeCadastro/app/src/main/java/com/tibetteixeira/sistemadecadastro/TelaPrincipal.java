@@ -1,14 +1,9 @@
 package com.tibetteixeira.sistemadecadastro;
 
-/**
- * Created by ZoSo on 22/01/2018.
- */
-
 import android.view.View;
 import android.widget.Button;
 
 public class TelaPrincipal {
-
     MainActivity act;
 
     Button btCadastrarUsuario;
@@ -22,7 +17,7 @@ public class TelaPrincipal {
 
     public void carregaTela(){
         act.setContentView(R.layout.activity_main);
-        btCadastrarUsuario = (Button) act.findViewById(R.id.btCadastrar);
+        btCadastrarUsuario = (Button) act.findViewById(R.id.btCadastrarUsuario);
         btListarUsuarios = (Button) act.findViewById(R.id.btListarUsuarios);
 
         btCadastrarUsuario.setOnClickListener(new View.OnClickListener(){
@@ -41,7 +36,8 @@ public class TelaPrincipal {
             }
         });
     }
-    
+
+
     public void setTelaCadastro(TelaCadastroUsuario tela_cadastro){
         this.tela_cadastro = tela_cadastro;
     }

@@ -1,13 +1,12 @@
 package com.tibetteixeira.sistemadecadastro;
 
-import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.app.Activity;
 import android.app.AlertDialog;
 
 import java.util.ArrayList;
 
-public class MainActivity extends AppCompatActivity {
+public class MainActivity extends Activity{
 
     private ArrayList<Registro> aRegistro;
     TelaPrincipal tela_principal;
@@ -17,7 +16,6 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
         aRegistro = new ArrayList<Registro>();
 
         tela_principal = new TelaPrincipal(this);
@@ -26,6 +24,7 @@ public class MainActivity extends AppCompatActivity {
 
         tela_principal.setTelaCadastro(tela_cadastro);
         tela_principal.setTelaListagem(tela_listagem);
+
         tela_principal.carregaTela();
     }
 
@@ -33,11 +32,12 @@ public class MainActivity extends AppCompatActivity {
         return aRegistro;
     }
 
-    public void ExibirMensagem(String msg){
+    public void exibirMensagem(String msg){
         AlertDialog.Builder d = new AlertDialog.Builder(MainActivity.this);
         d.setTitle("Aviso");
         d.setMessage(msg);
         d.setNeutralButton("OK", null);
         d.show();
     }
+
 }
